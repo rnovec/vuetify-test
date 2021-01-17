@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "58dbf3db5b663e43ce2d",
-    "url": "/vuetify-test/css/chunk-vendors.77e1c8b6.css"
+    "revision": "95a386faf32a937ddad4",
+    "url": "/vuetify-test/css/chunk-vendors.afe01af6.css"
   },
   {
-    "revision": "75b2566768f19cc98d41020015991a0e",
+    "revision": "b17e52ba378f949d4564071a4d8e0c53",
     "url": "/vuetify-test/index.html"
   },
   {
-    "revision": "e6143e3ff7544cbc0504",
-    "url": "/vuetify-test/js/app.bd1548bb.js"
+    "revision": "9f030850d9a86e6d8131",
+    "url": "/vuetify-test/js/app.4ed623e0.js"
   },
   {
-    "revision": "58dbf3db5b663e43ce2d",
-    "url": "/vuetify-test/js/chunk-vendors.ec484ac5.js"
+    "revision": "95a386faf32a937ddad4",
+    "url": "/vuetify-test/js/chunk-vendors.80a85f87.js"
   },
   {
     "revision": "4d4715733d616f6426153f2dfa700d00",
