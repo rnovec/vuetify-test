@@ -114,6 +114,11 @@
 
 <script>
 export default {
-  data: () => ({ drawer: null, dialog: false })
+  data: () => ({ drawer: null, dialog: false, mediaStream: null }),
+  mounted () {
+    navigator.mediaDevices.getUserMedia({ video: true }).then(mediaStream => {
+      this.mediaStream = mediaStream
+    })
+  }
 }
 </script>
