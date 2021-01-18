@@ -4,12 +4,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuetify-test/css/chunk-vendors.afe01af6.css"
   },
   {
-    "revision": "b17e52ba378f949d4564071a4d8e0c53",
+    "revision": "0138d32c3ae752f27e374ef8da825bde",
     "url": "/vuetify-test/index.html"
   },
   {
-    "revision": "9f030850d9a86e6d8131",
-    "url": "/vuetify-test/js/app.4ed623e0.js"
+    "revision": "9b732eb82051f0a9e567",
+    "url": "/vuetify-test/js/app.4977b9c0.js"
   },
   {
     "revision": "95a386faf32a937ddad4",
