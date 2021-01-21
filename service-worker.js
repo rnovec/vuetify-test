@@ -1,4 +1,4 @@
-importScripts("/vuetify-test/precache-manifest.d10e123c3425c9c63504643f65f9a13d.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/vuetify-test/precache-manifest.d5bdc269b1970294e738225b7197222c.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 workbox.setConfig({
   debug: false
