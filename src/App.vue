@@ -71,6 +71,9 @@
     </v-navigation-drawer>
 
     <v-main>
+      {{ result }}
+      <vue-qrcode value="https://www.1stg.me" />
+
       <v-dialog v-model="dialog" width="500">
         <!-- <template v-slot:activator="{ on, attrs }">
           <v-btn color="red lighten-2" dark v-bind="attrs" v-on="on">
@@ -83,9 +86,11 @@
             Privacy Policy
           </v-card-title>
 
-          <multi-format-barcode v-if="dialog" />
-
-          <v-divider></v-divider>
+          <StreamBarcodeReader
+            v-if="dialog"
+            @decode="getResult"
+            @loaded="onLoaded"
+          ></StreamBarcodeReader>
 
           <v-card-actions>
             <v-spacer></v-spacer>
@@ -113,12 +118,30 @@
 </template>
 
 <script>
+import { StreamBarcodeReader } from 'vue-barcode-reader'
+import VueQrcode from 'vue-qrcode'
+
 export default {
-  data: () => ({ drawer: null, dialog: false, mediaStream: null }),
+  data: () => ({ drawer: null, dialog: false, mediaStream: null, result: '' }),
+  components: {
+    StreamBarcodeReader,
+    VueQrcode
+  },
+  methods: {
+    getResult (val) {
+      if (val) {
+        this.result = val
+        this.dialog = false
+      }
+    },
+    onLoaded () {
+      console.log('loaded')
+    }
+  },
   mounted () {
-    navigator.mediaDevices.getUserMedia({ video: true }).then(mediaStream => {
-      this.mediaStream = mediaStream
-    })
+    // navigator.mediaDevices.getUserMedia({ video: true }).then(mediaStream => {
+    //   this.mediaStream = mediaStream
+    // })
   }
 }
 </script>

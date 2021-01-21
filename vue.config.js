@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/vuetify-test/',
   pwa: {
     // configure the workbox plugin
     workboxPluginMode: 'InjectManifest',

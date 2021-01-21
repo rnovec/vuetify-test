@@ -3,17 +3,17 @@
     "short_name": "Vue App",
     "icons": [
         {
-            "src": "/img/icons/android-chrome-192x192.png",
+            "src": "/vuetify-test/img/icons/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/img/icons/android-chrome-512x512.png",
+            "src": "/vuetify-test/img/icons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "start_url": "/index.html",
+    "start_url": "/vuetify-test/index.html",
     "theme_color": "#800000",
     "background_color": "#ffffff",
     "display": "standalone"
